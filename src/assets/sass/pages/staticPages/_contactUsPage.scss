@@ -1,0 +1,97 @@
+.contact_us_page_content_wrapper {
+    background-image: url(../media/images/map.svg);
+    height: 75vh;
+    background-size: cover;
+    background-position: top;
+    @include flexEndAlignment;
+    align-items: end;
+
+    .info_contact {
+        background-color: #fff;
+        padding: 5rem;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 5rem;
+            font-weight: bold;
+        }
+
+        ul {
+            @include borderRadius(15px);
+            @include flexSpaceBetweenAlignment;
+
+            li {
+                width: 100%;
+
+                a {
+                    text-align: center;
+                    display: block;
+
+                    svg {
+                        font-size: 3rem;
+                        color: var(--main_theme_clr);
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                        color: var(--light_gray_clr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section_text_content_wrapper {
+    .v-expansion-panel-header {
+        font-size: 1.1rem;
+        padding-block: 1.5rem;
+        border-bottom: 1px solid transparent;
+        font-family: $bold_font;
+        color: var(--main_theme_clr);
+
+        &.v-expansion-panel-header--active {
+            border-color: var(--main_theme_clr);
+        }
+    }
+
+    .v-expansion-panel-content__wrap {
+        padding: 1rem;
+        font-size: 1rem;
+        line-height: 28px;
+        color: var(--main_theme_clr);
+    }
+}
+
+@media (max-width: 767px) {
+    .contact_us_page_wrapper .page_content .content_overlay .contact_info_card {
+        width: 90%;
+        padding: 3rem 1rem;
+    }
+
+    .contact_us_page_wrapper .page_content .content_overlay .contact_info_card .card_items_wrapper {
+        flex-direction: column;
+    }
+
+    .contact_us_page_wrapper .page_content .content_overlay .contact_info_card .card_items_wrapper .contact_info_item {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 1rem;
+    }
+
+    .contact_us_page_wrapper .page_content .content_overlay .contact_info_card .card_items_wrapper .contact_info_item .icon {
+        width: 30px;
+    }
+
+    .contact_us_page_wrapper .page_content .content_overlay .contact_info_card .card_items_wrapper .contact_info_item .icon i {
+        font-size: 1.5rem;
+    }
+
+    .section_text_content_wrapper .v-expansion-panel-header {
+        padding: 1rem;
+        text-align: start;
+    }
+}

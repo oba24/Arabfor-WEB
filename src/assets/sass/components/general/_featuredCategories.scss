@@ -1,0 +1,29 @@
+.featured_cats_wrapper {
+    margin-block: 70px;
+
+    .cat_card_wrapper {
+        padding: 10px;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        @include borderRadius(20px);
+        @include flexCenterAlignment;
+        flex-direction: column;
+        row-gap: 10px;
+        &.main_cat_card {
+            width: 100%;
+        }
+        .cat_image_wrapper {
+            img {
+                object-fit: cover;
+            }
+        }
+        .cat_name_wrapper {
+            h4 {
+                text-align: center;
+                color: var(--theme_text_clr);
+                font-family: $bold_font;
+                font-size: 17px;
+            }
+        }
+    }
+}

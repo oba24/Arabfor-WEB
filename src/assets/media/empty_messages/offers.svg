@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="114.785" viewBox="0 0 167 114.785">
+  <g id="offers" transform="translate(-35 -35)">
+    <path id="Background" d="M46,70a7,7,0,0,1,0-14H7A7,7,0,1,1,7,42H47a7,7,0,0,0,0-14H22a7,7,0,0,1,0-14H62A7,7,0,0,1,62,0h98a7,7,0,1,1,0,14H120a7,7,0,1,1,0,14h22a7,7,0,0,1,0,14H131.826C126.951,42,123,45.134,123,49s6,7,6,7a7,7,0,0,1,0,14ZM153,35a7,7,0,1,1,7,7A7,7,0,0,1,153,35Z" transform="translate(35 63)" fill="#00703699"/>
+    <path id="line" d="M1,24.181ZM1,.181Z" transform="translate(140 85)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="ground_line" d="M114.128.5ZM87,.5ZM13,.5ZM.128.5Z" transform="translate(67 135)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <g id="Iconly_Curved_Setting" data-name="Iconly/Curved/Setting" transform="translate(76.903 45.387)">
+      <g id="Setting" transform="translate(3.501 2.5)">
+        <path id="Stroke_3" data-name="Stroke 3" d="M0,39.845,39.846,0" transform="translate(24.526 30.317)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Stroke_15" data-name="Stroke 15" d="M.5.5h0" transform="translate(51.329 58.117)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"/>
+        <path id="Stroke_15-2" data-name="Stroke 15" d="M.5.5h0" transform="translate(34.569 41.358)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"/>
+        <path id="Stroke_3-2" data-name="Stroke 3" d="M88.072,25.1h0A13.02,13.02,0,0,0,70.217,20.28a8.153,8.153,0,0,1-12.227-7.112A13.126,13.126,0,0,0,44.911,0h0A13.126,13.126,0,0,0,31.833,13.168a8.153,8.153,0,0,1-12.222,7.118A13.025,13.025,0,0,0,1.751,25.1,13.21,13.21,0,0,0,6.538,43.071a8.243,8.243,0,0,1,0,14.225A13.21,13.21,0,0,0,1.751,75.262a13.025,13.025,0,0,0,17.855,4.824h0a8.148,8.148,0,0,1,12.222,7.107h0A13.126,13.126,0,0,0,44.911,100.4h0A13.126,13.126,0,0,0,57.984,87.23h0a8.153,8.153,0,0,1,12.227-7.107A13.025,13.025,0,0,0,88.067,75.3a13.21,13.21,0,0,0-4.782-17.966h0a8.243,8.243,0,0,1,0-14.225A13.21,13.21,0,0,0,88.072,25.1Z" transform="translate(-0.001)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+    </g>
+    <circle id="Oval" cx="3" cy="3" r="3" transform="translate(155 36)" fill="none" stroke="#007036" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Oval-2" data-name="Oval" cx="3" cy="3" r="3" transform="translate(186 52)" fill="#007036"/>
+    <path id="Line_5" data-name="Line 5" d="M4.6,4.6.481,8.712,4.6,4.6.354.354,4.6,4.6,8.839.354,4.6,4.6,8.712,8.712Z" transform="translate(165.404 49.404)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="Line_4" data-name="Line 4" d="M3,3,0,6,3,3,0,0,3,3,6,0,3,3,6,6Z" transform="translate(71.404 67.596)" fill="none" stroke="#007036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <circle id="Oval-3" data-name="Oval" cx="3" cy="3" r="3" transform="translate(82 55)" fill="#007036"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+.about_us_page_content_wrapper {
+    .about_company_content,
+    .about_owner_content {
+        margin-block: 35px;
+        .section_title_wrapper {
+            .section_title {
+                @include mainTitleStyle;
+                margin-bottom: 25px;
+            }
+        }
+        .section_text_content_wrapper {
+            @include textWraper;
+            color: var(--theme_text_clr);
+            font-family: $medium_font;
+            text-align: center;
+        }
+        .about_image_wrapper {
+            img {
+                width: 100%;
+                height: 100%;
+                @include borderRadius(10px);
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.addresses_content_wrapper {
+    .address_form_wrapper {
+        form {
+            .input_wrapper {
+                margin-block: 0;
+                border: none;
+                input {
+                    padding: 12px;
+                    background-color: var(--form_content_bg_clr);
+                    @include borderRadius(30px);
+                    border: 2px solid var(--border_clr);
+                }
+            }
+
+            .map_wrapper {
+                .vue-map {
+                    @include borderRadius(30px);
+                }
+            }
+        }
+    }
+}

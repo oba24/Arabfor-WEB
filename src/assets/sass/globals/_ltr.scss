@@ -1,0 +1,46 @@
+body {
+    &[dir="ltr"] {
+        // START:: GLOBAL LTR STYLES
+        // END:: GLOBAL LTR STYLES
+
+        // START:: LTR HEADER STYLE
+        nav {
+            .profile_drawer_wrapper {
+                right: -100%;
+                .drawer_content_wraper {
+                    right: -100%;
+                }
+                &.active {
+                    right: 0;
+                    .drawer_content_wraper {
+                        right: 0;
+                    }
+                }
+            }
+        }
+        // END:: LTR HEADER STYLE
+
+        // START:: LTR SLIDER STYLE
+        .slider_wrapper {
+            .owl-carousel {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 35px;
+                border-bottom-right-radius: 35px;
+            }
+
+            .owl-dots {
+                right: auto;
+                left: 45px;
+
+                .owl-dot {
+                    &::before {
+                        left: auto;
+                        right:  -165%;
+                    }
+                }
+            }
+        }
+        // END:: LTR SLIDER STYLE
+    }
+}

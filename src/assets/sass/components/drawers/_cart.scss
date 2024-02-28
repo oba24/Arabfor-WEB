@@ -1,0 +1,366 @@
+    // START:: CART DRAWER STYLES
+    .cart_drawer_wrapper {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 20;
+        @include flexCenterAlignment;
+        @include transitioning(0.5s);
+
+        &.active {
+            right: 0;
+
+            .drawer_content_wraper {
+                right: 0;
+            }
+        }
+
+        .head_drawer {
+            h3 {
+                font-family: $bold_font;
+                font-size: 2rem;
+                text-align: center;
+                margin: 0;
+                @include flexCenterAlignment;
+                flex-direction: column;
+                color: var(--main_theme_clr);
+
+                span {
+                    font-size: 1.3rem;
+                    font-family: $bold_font;
+                    margin-top: 5px;
+
+                    small {
+                        font-family: $medium_font;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .body_drawer_cart_items {
+            margin-top: 3rem;
+            height: 50vh;
+            overflow-y: scroll;
+
+            .single_cart_item {
+                @include flexSpaceBetweenAlignment;
+                margin-bottom: 2rem;
+
+                .cart_item_image {
+                    width: 130px;
+                    height: 130px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: top;
+                        @include borderRadius(20px);
+                    }
+                }
+
+                .cart_item_details {
+                    height: 100%;
+                    width: 320px;
+                    padding-inline: 1rem;
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        @include flexSpaceBetweenAlignment;
+                        flex-direction: column;
+                        align-items: baseline;
+
+                        li {
+                            font-size: 1rem;
+                            color: #958A7E;
+                            margin-bottom: .5rem;
+
+                            a {
+                                font-family: $bold_font;
+                                font-size: 1.1rem;
+                                color: var(--main_theme_clr);
+                            }
+
+                            &.currency {
+                                color: var(--mid_green_clr);
+                                font-family: $bold_font;
+                                font-size: 1rem;
+                            }
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    form {
+                        @include flexSpaceBetweenAlignment;
+                        margin-top: 1rem;
+
+                        .cart_btn_min_max {
+                            @include borderRadius(20px);
+                            background-color: var(--theme_third_bg_clr);
+
+                            button {
+                                width: 38px;
+                                height: 38px;
+                            }
+
+                            input {
+                                width: 50px;
+                                height: 38px;
+                                text-align: center;
+                            }
+                        }
+
+                        .remove_item {
+                            button {
+                                background-color: #F4F4F4;
+                                height: 40px;
+                                width: 40px;
+                                color: var(--main_theme_clr);
+                                @include borderRadius(50%);
+
+                                &:hover {
+                                    background-color: var(--main_theme_clr);
+                                    color: #F4F4F4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_drawer_cart_items {
+            .submit_coupon {
+                position: relative;
+                width: 50px;
+                height: 20px;
+
+                .btn_loader {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0px;
+                    width: 20px;
+                    height: 20px;
+                    padding: 2px;
+                    border: 2px dotted var(--main_theme_clr);
+                    border-style: solid solid dotted dotted;
+                    @include borderRadius(50%);
+                    @include transitioning(0.4s);
+                    display: inline-block;
+                    animation: rotation 2s linear infinite;
+                    margin: 0 auto;
+                }
+            }
+
+            .amounts {
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        @include flexSpaceBetweenAlignment;
+                        font-size: 1rem;
+                        color: var(--main_theme_clr);
+                        margin-block: 1.5rem;
+                        position: relative;
+                        font-family: $bold_font;
+
+                        span {
+                            font-family: $bold_font;
+                            font-size: 1rem;
+                            width: 80%;
+                            @include flexSpaceBetweenAlignment;
+
+                            &::after {
+                                content: "";
+                                width: 70%;
+                                border-top: 1px dashed #DDDDDD;
+                            }
+                        }
+
+                        &:last-child {
+                            span {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .checkout_btn {
+                text-align: center;
+
+                button {
+                    @include simpleButtonStyle;
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .drawer_content_wraper {
+            background-color: var(--theme_third_bg_clr);
+            padding: 20px;
+            margin: 0;
+            list-style: none;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            min-width: 500px;
+            max-width: 500px;
+            min-height: 100vh;
+            max-height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            @include transitioning(0.5s);
+            transition-delay: 0.2s;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+
+            .title_wrapper {
+                h4 {
+                    margin-top: 25px;
+                    text-align: center;
+                    color: var(--theme_text_clr);
+                    font-size: 25px;
+                    font-family: $bold_font;
+                }
+            }
+
+            form {
+                margin-top: 40px;
+
+                .rating_wrapper {
+                    .rating_label {
+                        margin-bottom: 12px;
+                        font-size: 17px;
+                        color: var(--light_gray_clr);
+                    }
+
+                    .vue-star-rating {
+                        .vue-star-rating-rating-text {
+                            display: none;
+                        }
+                    }
+                }
+
+                .btn_wrapper {
+                    margin-top: 15px;
+                    @include flexSpaceBetweenAlignment;
+
+                    .cancel_btn {
+                        color: var(--theme_text_clr);
+                        background-image: linear-gradient(90deg, transparent 50%, var(--theme_second_bg_clr) 50%);
+                        border: 1px solid var(--theme_second_bg_clr);
+
+                        &:hover {
+                            background-position: 100%;
+                            color: var(--theme_text_clr);
+                        }
+                    }
+                }
+            }
+        }
+
+        .close_btn {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            width: 35px;
+            height: 35px;
+            background-color: var(--white_clr);
+            @include borderRadius(50%);
+            @include flexCenterAlignment;
+
+            svg,
+            i {
+                color: var(--mid_gray_clr);
+                font-size: 25px;
+                @include transitioning(0.4s);
+            }
+
+            &:hover {
+
+                svg,
+                i {
+                    color: var(--mid_red_clr);
+                    transform: rotate(90deg) scale(1.1);
+                }
+            }
+        }
+
+        .drawer_overlay {
+            background-color: rgb(0 0 0 / 30%);
+            height: 100%;
+            width: 100%;
+        }
+
+        // START:: MEDIA QUERIES
+        @media (max-width: 767px) {
+            .drawer_content_wraper {
+                min-width: 90%;
+                max-width: 90%;
+                padding-bottom: 90px;
+
+            }
+
+            .cart_drawer_wrapper {
+                .body_drawer_cart_items {
+                    .single_cart_item {
+                        .cart_item_details {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        // END:: MEDIA QUERIES
+    }
+
+    // END:: CART DRAWER STYLES
+
+    @media (max-width: 767px) {
+        .cart_drawer_wrapper {
+            .body_drawer_cart_items {
+                .single_cart_item {
+                    flex-direction: column;
+
+                    .cart_item_image {
+                        width: 100%;
+                    }
+
+                    .cart_item_details {
+                        width: 100%;
+                    }
+
+                }
+            }
+
+            .footer_drawer_cart_items {
+                .amounts {
+                    ul {
+                        li {
+                            span {
+                                width: max-content;
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

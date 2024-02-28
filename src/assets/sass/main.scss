@@ -1,0 +1,119 @@
+// ======== START:: IMPORTING VARIABLES ======== //
+@import "sassHelpers/variables";
+// ======== END:: IMPORTING VARIABLES ======== //
+
+// ======== START:: IMPORTING MIXINS ======== //
+@import "sassHelpers/mixins";
+// ======== END:: IMPORTING MIXINS ======== //
+
+// ======== START:: IMPORTING FONTS ======== //
+@import "fonts/fonts";
+// ======== END:: IMPORTING FONTS ======== //
+
+// ======== START:: IMPORTING ANIMATIONS ======== //
+@import "globals/animation";
+// ======== END:: IMPORTING ANIMATIONS ======== //
+
+// ======== START:: IMPORTING PRODUCT COMPONENTS STYLES ======== //
+@import "views/product/productDetails";
+@import "components/product/productCard";
+@import "components/product/productSlider";
+@import "components/product/productMultiCarousel";
+@import "components/product/productRates";
+// ======== END:: IMPORTING PRODUCT COMPONENTS STYLES ======== //
+
+// ======== START:: IMPORTING GLOBAL STYLES ======== //
+@import "globals/formInputs";
+@import "globals/emojisPicker";
+@import "globals/pagenation";
+@import "globals/global";
+// ======== END:: IMPORTING GLOBAL STYLES ======== //
+
+// ======== START:: IMPORTING AUTHENTICATION STYLES ======== //
+@import "components/authentication/authentication";
+@import "components/authentication/phoneVerification";
+// ======== END:: IMPORTING AUTHENTICATION STYLES ======== //
+
+// ======== START:: IMPORTING LAYOUTS STYLES ======== //
+@import "components/layouts/theHeader";
+@import "components/layouts/theFooter";
+// ======== END:: IMPORTING LAYOUTS STYLES ======== //
+
+// ======== START:: IMPORTING STRUCTURE STYLES ======== //
+@import "components/structure/slider";
+@import "components/structure/breadcrumb";
+@import "components/structure/tabs";
+// ======== END:: IMPORTING STRUCTURE STYLES ======== //
+
+// ======== START:: IMPORTING GENERAL SECTIONS STYLES ======== //
+@import "components/general/aboutUsSec";
+@import "components/general/contactUsSec";
+@import "components/general/featuredCategories";
+@import "components/general/offerPanel";
+@import "components/general/sliderSection";
+// ======== END:: IMPORTING GENERAL SECTIONS STYLES ======== //
+
+// ======== START:: IMPORTING DRAWERS COMPONENTS  STYLES ======== //
+@import "components/drawers/filter";
+@import "components/drawers/cart";
+@import "components/drawers/wallet";
+@import "components/drawers/withdraw";
+// ======== END:: IMPORTING DRAWERS COMPONENTS  STYLES ======== //
+
+// ======== START:: IMPORTING UI COMPONENTS STYLES ======== //
+@import "components/ui/loaders";
+@import "components/ui/solidCard";
+@import "components/ui/imagedCard";
+@import "components/ui/imageHeader";
+@import "components/ui/baseModal";
+@import "components/ui/userEmptyMessage";
+// ======== END:: IMPORTING UI COMPONENTS STYLES ======== //
+
+// ======== START:: IMPORTING MODALS COMPONENTS STYLES ======== //
+@import "components/modals/termsModal";
+@import "components/modals/successModal";
+@import "components/modals/deleteModal";
+// ======== END:: IMPORTING MODALS COMPONENTS STYLES ======== //
+
+// ======== START:: IMPORTING PAGES STYLES ======== //
+@import "pages/appContentWrapper";
+@import "pages/staticPages/staticPages";
+@import "pages/staticPages/aboutUsPage";
+@import "pages/staticPages/contactUsPage";
+@import "pages/staticPages/notFoundPage";
+// ======== END:: IMPORTING PAGES STYLES ======== //
+
+// ======== START:: IMPORTING CHAT COMPONENTS STYLES ======== //
+@import "components/conversation/chatsList";
+@import "components/conversation/chatContent";
+// ======== END:: IMPORTING CHAT COMPONENTS STYLES ======== //
+
+// ======== END:: IMPORTING ADVERTISEMENTS STYLES ======== //
+@import "views/advertisements/createAndEditAdvertisement";
+// ======== END:: IMPORTING ADVERTISEMENTS STYLES ======== //
+
+// ======== START:: IMPORTING CHECKOUT STYLES ======== //
+@import "views/checkout/checkout";
+// ======== END:: IMPORTING CHECKOUT STYLES ======== //
+
+// ======== START:: IMPORTING ADDRESSES STYLES ======== //
+@import "views/addresses/addressesForms";
+@import "views/addresses/allAddresses";
+// ======== END:: IMPORTING ADDRESSES STYLES ======== //
+
+// ======== START:: IMPORTING ADDRESSES STYLES ======== //
+@import "views/competitions/competitions";
+@import "views/competitions/allWinners";
+// ======== END:: IMPORTING ADDRESSES STYLES ======== //
+
+// ======== START:: IMPORTING SEARCH  STYLES ======== //
+@import "components/search/searchForm";
+// ======== END:: IMPORTING SEARCH  STYLES ======== //
+
+// ======== END:: IMPORTING CATEGORY STYLES ======== //
+@import "views/categories/categoryDetails";
+// ======== END:: IMPORTING CATEGORY STYLES ======== //
+
+// ======== START:: IMPORTING LTR STYLES ======== //
+@import "globals/ltr";
+// ======== END:: IMPORTING LTR STYLES ======== //

@@ -1,0 +1,22 @@
+.pagination_container {
+    nav {
+        background: transparent;
+        position: static;
+        .v-pagination {
+            li {
+                button {
+                    background: var(--theme_second_bg_clr) !important;
+                    color: var(--theme_text_clr) !important;
+                    i, 
+                    svg {
+                        color: var(--main_theme_clr);
+                    }
+                    &.v-pagination__item--active {
+                        background: var(--main_theme_clr) !important;
+                        color: var(--white_clr) !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.competition_content_wrapper {
+    padding-block: 20px;
+    .question_card {
+        margin-block: 20px;
+        padding: 25px;
+        @include flexCenterAlignment;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        @include borderRadius(10px);
+        .question_title,
+        .question_desc {
+            margin: 0;
+            color: var(--theme_text_clr);
+        }
+        .question_title{
+            font-family: $semi_bold_font;
+        }
+        .question_desc{
+            font-family: $bold_font;
+        }
+        &:hover {
+            background-color: var(--main_theme_clr);
+            border: 2px solid var(--main_theme_clr);
+            .question_title,
+            .question_desc {
+                color: var(--white_clr);
+            }
+        }
+    }
+
+    .answer_wrapper {
+        margin-block: 10px;
+        padding: 15px 20px;
+        @include flexCenterAlignment;
+        column-gap: 10px;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        @include borderRadius(35px);
+        input {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            color: var(--theme_text_clr);
+        }
+        .send_answer_btn {
+            color: var(--theme_text_clr);
+            font-family: $semi_bold_font;
+        }
+    }
+
+    .answer_hint {
+        margin-block: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        @include borderRadius(35px);
+        color: var(--main_theme_clr);
+        font-size: 18px;
+        font-family: $bold_font;
+    }
+
+    .winners_title {
+        margin-bottom: 10px;
+        text-align: center;
+        color: var(--main_theme_clr);
+        font-family: $bold_font;
+    }
+
+    .winner_card {        
+        padding: 15px;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        @include borderRadius(10px);
+        @include flexCenterAlignment;
+        flex-direction: column;
+        row-gap: 15px;
+        .winner_position {
+            margin: 0;
+            text-align: center;
+            color: var(--main_theme_clr);
+            font-family: $semi_bold_font;
+        }
+        .image_wrapper {
+            @include flexCenterAlignment;
+            img {
+                border: 4px solid var(--theme_main_bg_clr);
+                object-fit: cover;
+                @include borderRadius(50%);
+            }
+        }
+        .winner_name {
+            margin: 0;
+            text-align: center;
+            color: var(--main_theme_clr);
+            font-family: $bold_font;
+        }
+        .prize {
+            margin: 0;
+            text-align: center;
+            color: var(--light_gray_clr);
+            font-family: $medium_font;
+        }
+    }
+
+    .route_wrapper {
+        @include flexCenterAlignment;
+        a {
+            @include simpleButtonStyle;
+            width: max-content;
+        }
+    }
+}

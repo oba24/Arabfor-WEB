@@ -1,0 +1,56 @@
+form {
+    .verification_inputs_wrapper {
+        border: none;
+        background-color: transparent;
+        margin-block: 30px;
+        @include flexSpaceAroundAlignment;
+        column-gap: 15px;
+
+        input[size="1"] {
+            width: 75px;
+            height: 60px;
+            text-align: center;
+            font-size: 18px;
+            font-family: $semi_bold_font;
+            border: 1px solid #E8EAEF;
+            @include borderRadius(8px);
+            background-color: var(--theme_second_bg_clr);
+            padding-inline: 15px;
+        }
+
+        button {
+            @include simpleButtonStyle;
+        }
+
+        &:last-of-type {
+            margin-block: 40px;
+        }
+    }
+
+    .timer_wrapper {
+        text-align: center;
+
+        h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: var(--theme_text_clr);
+        }
+
+        .resend_btn_wrapper {
+            margin-top: 15px;
+
+            button {
+                color: var(--main_theme_clr);
+                font-size: 18px;
+                font-family: $semi_bold_font;
+                @include transitioning(0.4s);
+
+                &[disabled] {
+                    color: var(--light_gray_clr);
+                }
+            }
+        }
+    }
+}
+
+// END:: VERIFICATION STYLES

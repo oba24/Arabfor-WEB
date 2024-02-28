@@ -1,0 +1,84 @@
+// START:: ROOT ELEMENT
+:root {
+    // =========== START:: THEME COLORS =========== 
+    --theme_main_bg_clr: #FFFFFF;
+    --theme_second_bg_clr: #F7F5EF;
+    --theme_third_bg_clr: #FBF9F4;
+    --form_content_bg_clr: #fff;
+    --footer_bg_clr: #1C1D20;
+    --theme_text_clr: #313131;
+    --theme_secondary_text_clr: #A8B1C1;
+    --main_theme_clr: #007036;
+    --dark_main_theme_clr: #29479A;
+    --very_light_theme_clr: #FBFFFC;
+    --soft_main_theme_clr: #a8e2ff;
+    --secondary_theme_clr: #F5ECFF;
+    --blurred_clr: rgba(255, 255, 255, 0.6);
+    --simple_shadow_clr: rgba(225, 225, 225, 0.3);
+    --mid_shadow_clr: rgba(225, 225, 225, 0.6);
+    --border_clr: #f3f3f3;
+    --skeleton_loader_card_clr: #ebebeb;
+    // =========== END:: THEME COLORS =========== 
+
+    // =========== START:: BASE COLORS =========== 
+    --white_clr: #fff;
+    --lighter_gray_clr: #F7F7FA;
+    --light_gray_clr: #8d8d8d;
+    --mid_gray_clr: #313131;
+    --dark_gray_clr: #212121;
+    --mid_blue_clr: #103580;
+    --mid_green_clr: #34BF6C;
+    --deep_red-clr: #810000;
+    --mid_red_clr: #FA4248;
+    --light_red_clr: #FF2159;
+    --soft_red_clr: #FFD8E2;
+    --gold_clr: #FFDD00;
+    --soft_yellow_clr: #FFF8CC;
+    // =========== END:: BASE COLORS =========== 
+
+    // =========== START:: BRANDS COLORS =========== 
+    --facebook_clr: #4267B2;
+    --twitter_clr: #1DA1F2;
+    --whatsApp_clr: #25D366;
+    --telegram_clr: #0088cc;
+    --linkedin_clr: #2867b2;
+    --youtube_clr: #ff0000;
+    // =========== END:: BRANDS COLORS =========== 
+
+    // START:: DARK THEME COLORS
+    .dark_theme {
+        // =========== START:: THEME COLORS =========== 
+        --theme_main_bg_clr: #232A3B;
+        --theme_second_bg_clr: #293145;
+        --theme_third_bg_clr: #232A3B;
+        --form_content_bg_clr: rgba(41, 49, 69, 0.6);
+        --footer_bg_clr: #293145;
+        --main_theme_clr: #5fa59c;
+        --dark_main_theme_clr: #249AD5;
+        // --third_theme_clr: #2c354c;
+        --theme_text_clr: #fff;
+        --theme_secondary_text_clr: #fff;
+        --very_light_theme_clr: #0a0e0b;
+        --soft_main_theme_clr: #151c2e;
+        --secondary_theme_clr: #151c2e;
+        --theme_inputs_clr: #0d132266;
+        --blurred_clr: rgba(41, 49, 69, 0.6);
+        --simple_shadow_clr: rgba(9, 20, 37, 0.4);
+        --mid_shadow_clr: rgba(9, 20, 37, 0.6);
+        --border_clr: #283146;
+        // =========== END:: THEME COLORS =========== 
+    }
+
+    // END:: DARK THEME COLORS
+}
+
+// END:: ROOT ELEMENT
+
+// START:: ARABIC FONTS
+$light_font: "Cairo-Light";
+$regular_font: "Cairo-Regular";
+$medium_font: "Cairo-Medium";
+$semi_bold_font: "Cairo-SemiBold";
+$bold_font: "Cairo-Bold";
+$extra_bold_font: "Cairo-ExtraBold";
+// END:: ARABIC FONTS

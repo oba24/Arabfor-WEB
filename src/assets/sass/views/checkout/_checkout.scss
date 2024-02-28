@@ -1,0 +1,65 @@
+.checkout_content_wrapper {
+    .payment_form_wrapper {
+        padding-block: 20px;
+        form {
+            .group_title {
+                margin-block: 35px;
+                text-align: start;
+                font-weight: bold;
+                color: var(--main_theme_clr);
+            }
+        }
+    }
+}
+
+// START:: DIALOGS STYLES
+.v-dialog {
+    max-width: 550px;
+    .theme--light {
+        &.v-card {
+            padding: 25px;
+            background-color: var(--theme_second_bg_clr) !important;
+            @include flexCenterAlignment;
+            flex-direction: column;
+            row-gap: 25px;
+            @include borderRadius(8px);
+
+            .modal_text_wrapper {
+                @include flexCenterAlignment;
+                flex-direction: column;
+                row-gap: 15px;
+                .modal_title {
+                    margin: 0;
+                    color: var(--main_theme_clr);
+                    font-family: $bold_font;
+                }
+                .order_number {
+                    margin: 0;
+                    @include flexCenterAlignment;
+                    flex-direction: column;
+                    row-gap: 6px;
+                    span {
+                        color: var(--main_theme_clr);
+                        font-family: $medium_font;
+                    }
+                }
+            }
+
+            .v-card__actions {
+                .main_modal_btn {
+                    @include simpleButtonStyle;
+                    font-size: 16px;
+                    margin-top: 0;
+                    margin-inline: 8px; 
+                    background-color: transparent !important;
+                    height: unset !important;
+                }
+            }
+        }
+    }   
+
+    @media (max-width: 767px) {
+        max-width: 95%;
+    }
+}
+// END:: DIALOGS STYLES

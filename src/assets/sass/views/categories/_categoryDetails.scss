@@ -1,0 +1,38 @@
+.filter_content_btns_wrapper {
+    margin-bottom: 15px;
+    @include flexStartAlignment;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 8px;
+
+    .filter_content_btn {
+        padding: 8px;
+        width: max-content;
+        @include flexCenterAlignment;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        color: var(--theme_text_clr);
+        @include borderRadius(8px);
+        @include transitioning(0.4s);
+        &:hover,
+        &.active_btn {
+            background-color: var(--main_theme_clr);
+            border: 2px solid var(--main_theme_clr);
+            color: var(--white_clr);
+        }
+    }
+}
+
+.filter_drawer_toggeler_wrapper {
+    margin-block: 30px 15px;
+    @include flexEndAlignment;
+    .filter_drawer_toggeler {
+        @include flexCenterAlignment;
+        column-gap: 6px;
+        span {
+            color: var(--theme_text_clr);
+            font-size: 20px;
+            font-family: $bold_font;
+        }
+    }
+}

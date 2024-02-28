@@ -1,0 +1,121 @@
+.all_addresses_wrapper {
+    // START:: ADDRESS CARD STYLES
+    .address_card {
+        margin-block: 0;
+        padding: 20px;
+        @include flexCenterAlignment;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: var(--theme_second_bg_clr);
+        border: 2px solid var(--border_clr);
+        @include borderRadius(20px);
+        .address_name {
+            margin: 0;
+            color: var(--main_theme_clr);
+            font-family: $bold_font;
+        }
+        .address_details {
+            color: var(--light_gray_clr);
+            @include textEllipsis;
+            font-size: 18px;
+            width: 100%;
+        }
+        .address_actions_btns {
+            width: 100%;
+            @include flexSpaceBetweenAlignment;
+            button {
+                font-size: 18px;
+                &.delete_btn {
+                    color: var(--mid_red_clr);
+                    font-family: $medium_font;
+                }
+            }
+            a {
+                &.edit_route {
+                    @include flexCenterAlignment;
+                    column-gap: 8px;
+                    span {
+                        font-size: 18px;
+                        color: var(--theme_text_clr);
+                        font-family: $medium_font;
+                        i, 
+                        svg {
+                            display: inline-block;
+                            font-size: 18px;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // END:: ADDRESS CARD STYLES
+
+    .btn_wrapper {
+        @include flexCenterAlignment;
+        a {
+            @include simpleButtonStyle;
+            margin-top: 0;
+            width: max-content;
+            font-size: 18px;
+        }
+    }
+}
+
+// START:: DIALOGS STYLES
+.v-dialog {
+    max-width: 500px;
+    .theme--light {
+        &.v-card {
+            padding: 25px;
+            background-color: var(--theme_second_bg_clr) !important;
+            @include flexCenterAlignment;
+            flex-direction: column;
+            @include borderRadius(8px);
+            
+            .dialog_desc_text {
+                text-align: center;
+                color: var(--theme_text_clr);
+                line-height: 1.8;
+            }
+
+            .v-card__title {
+                color: var(--theme_text_clr);
+                font-size: 28px !important;
+                font-family: $semi_bold_font !important;
+            }
+
+            .v-card__actions {
+                .cancel_delete_btn {
+                    @include simpleButtonStyle;
+                    font-size: 16px;
+                    margin-inline: 8px; 
+                    background-color: transparent !important;
+                    height: unset !important;
+                }
+                .confirm_delete_btn {
+                    @include simpleButtonStyle;
+                    font-size: 16px;
+                    margin-inline: 8px; 
+                    background-color: transparent !important;
+                    background-image: linear-gradient(90deg, transparent 50%, var(--mid_red_clr) 50%);
+                    border: 1px solid var(--mid_red_clr);
+                    height: unset !important;
+                    &:hover {
+                        background-position: 0;
+                        color: var(--mid_red_clr);
+                        .btn_loader {
+                            border: 3px dotted var(--mid_red_clr);
+                        }
+                    } 
+                }
+            }
+        }
+    }   
+
+    @media (max-width: 767px) {
+        max-width: 95%;
+    }
+}
+// END:: DIALOGS STYLES

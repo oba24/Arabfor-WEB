@@ -1,0 +1,8 @@
+.section_content_wrapper {
+    margin-block: 70px;
+    .section_title_wrapper {
+        .section_title {
+            @include mainTitleStyle;
+        }
+    }
+}

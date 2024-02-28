@@ -1,0 +1,131 @@
+.rates_list_wrapper {
+    overflow-y: scroll;
+
+    // padding-block: 30px;
+    // border-inline-end: 1px solid var(--secondary_theme_clr);
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .rates_list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .rate_route_wrapper {
+            .rate_content {
+                width: 100%;
+                padding: 20px;
+                margin-block: 3rem;
+                border: 2px solid #f7f5ef;
+                background-color: #F7F5EF;
+                @include flexStartAlignment;
+                column-gap: 15px;
+                @include borderRadius(10px);
+                overflow-x: hidden;
+
+                .avatar_wrapper {
+                    img {
+                        @include borderRadius(50%);
+                        object-fit: cover;
+                    }
+                }
+
+                .rate_details_wrapper {
+                    width: 100%;
+
+                    .name_and_rate_date_wrapper {
+                        margin-bottom: 10px;
+                        @include flexSpaceBetweenAlignment;
+
+                        .name,
+                        .rate_date_wrapper {
+                            color: var(--theme_text_clr);
+                        }
+
+                        .name {
+                            text-align: start;
+                            width: inherit;
+                            @include flexSpaceBetweenAlignment;
+
+                            .rating {
+                                margin-inline-start: 1rem;
+                            }
+                        }
+                    }
+
+                    .comment_text {
+                        color: var(--theme_text_clr);
+                        max-width: 80%;
+                        @include textEllipsis;
+                    }
+                }
+            }
+
+            &:first-child {
+                .rate_content {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .rate_form {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        border: 2px solid #f7f5ef;
+        background-color: #00703699;
+        @include borderRadius(10px);
+
+        .rating_wrapper {
+            @include flexCenterAlignment;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .rating_label {
+                font-size: 26px;
+                font-family: $bold_font;
+            }
+
+            .vue-star-rating {
+                .vue-star-rating-rating-text {
+                    display: none;
+                }
+            }
+        }
+
+        .btn_wrapper {
+            margin-top: 20px;
+        }
+    }
+}
+
+.rating svg.bi-star-half {
+    transform: rotate(145deg);
+    margin-top: 2px;
+}
+
+@media (max-width: 767px) {
+    .rates_list_wrapper .rates_list .rate_route_wrapper .rate_content {
+        flex-direction: column;
+    }
+
+    .rates_list_wrapper .rates_list .rate_route_wrapper .rate_content .rate_details_wrapper .name_and_rate_date_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rates_list_wrapper .rates_list .rate_route_wrapper .rate_content .rate_details_wrapper .name_and_rate_date_wrapper .name {
+        flex-direction: column;
+    }
+
+    .rates_list_wrapper .rates_list .rate_route_wrapper .rate_content .rate_details_wrapper .comment_text {
+        max-width: 100%;
+    }
+}

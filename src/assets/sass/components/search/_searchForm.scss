@@ -1,0 +1,36 @@
+.search_form_content_wrapper {
+    position: absolute;
+    inset: 0;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    // backdrop-filter: blur(4px);
+    @include flexCenterAlignment;
+    z-index: 100;
+
+    .close_btn {
+        position: absolute;
+        top: 35px;
+        left: 40px;
+        color: var(--white_clr);
+        @include transitioning(0.4s);
+
+        svg,
+        i {
+            font-size: 30px;
+        }
+
+        &:hover {
+            transform: rotate(180deg);
+            transform-origin: center;
+            color: var(--mid_red_clr);
+        }
+    }
+
+    .input_wrapper {
+        input {
+            text-align: center;
+            font-size: 40px;
+            color: var(--dark_gray_clr);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="108.348" viewBox="0 0 167 108.348">
+  <g id="content" transform="translate(-35 -35)">
+    <path id="Background" d="M46,70a7,7,0,0,1,0-14H7A7,7,0,1,1,7,42H47a7,7,0,0,0,0-14H22a7,7,0,0,1,0-14H62A7,7,0,0,1,62,0h98a7,7,0,1,1,0,14H120a7,7,0,1,1,0,14h22a7,7,0,0,1,0,14H131.826C126.951,42,123,45.134,123,49s6,7,6,7a7,7,0,0,1,0,14ZM153,35a7,7,0,1,1,7,7A7,7,0,0,1,153,35Z" transform="translate(35 63)" fill="#d2c6b8"/>
+    <path id="line" d="M1,24.181ZM1,.181Z" transform="translate(140 85)" fill="none" stroke="#84715b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="ground_line" d="M114.128.5ZM87,.5ZM13,.5ZM.128.5Z" transform="translate(67 135)" fill="none" stroke="#43290a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <g id="Iconly_Curved_Document" data-name="Iconly/Curved/Document" transform="translate(84.5 53.478)">
+      <g id="Document" transform="translate(3.61 2.75)">
+        <path id="Stroke_1" data-name="Stroke 1" d="M33.415.5H0" transform="translate(22.058 59.416)" fill="#fff" stroke="#43290a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Stroke_2" data-name="Stroke 2" d="M33.415.5H0" transform="translate(22.058 42.014)" fill="#fff" stroke="#43290a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Stroke_3" data-name="Stroke 3" d="M12.75.5H0" transform="translate(22.058 24.617)" fill="#fff" stroke="#43290a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Stroke_4" data-name="Stroke 4" d="M0,42.81C0,74.915,9.719,85.62,38.835,85.62s38.835-10.7,38.835-42.81S67.964,0,38.835,0,0,10.7,0,42.81Z" fill="#fff" stroke="#43290a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="20" transform="translate(100.5 78.5)" fill="none" stroke="#43290a" stroke-linecap="round" stroke-width="3"/>
+    <circle id="Oval" cx="3" cy="3" r="3" transform="translate(155 36)" fill="none" stroke="#84715b" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Oval-2" data-name="Oval" cx="3" cy="3" r="3" transform="translate(186 52)" fill="#84715b"/>
+    <path id="Line_5" data-name="Line 5" d="M4.6,4.6.481,8.712,4.6,4.6.354.354,4.6,4.6,8.839.354,4.6,4.6,8.712,8.712Z" transform="translate(165.404 49.404)" fill="none" stroke="#84715b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <path id="Line_4" data-name="Line 4" d="M3,3,0,6,3,3,0,0,3,3,6,0,3,3,6,6Z" transform="translate(71.404 67.596)" fill="none" stroke="#84715b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    <circle id="Oval-3" data-name="Oval" cx="3" cy="3" r="3" transform="translate(82 55)" fill="#84715b"/>
+    <line id="Line_2" data-name="Line 2" x2="30" transform="translate(100.5 88.5)" fill="none" stroke="#43290a" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" x2="40" transform="translate(100.5 98.5)" fill="none" stroke="#43290a" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_4-2" data-name="Line 4" x2="50" transform="translate(100.5 108.5)" fill="none" stroke="#43290a" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_5-2" data-name="Line 5" x2="55" transform="translate(100.5 118.5)" fill="none" stroke="#43290a" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

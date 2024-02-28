@@ -1,0 +1,15 @@
+.advertisement_form_wrapper {
+    padding-block: 40px;
+
+    .section_title_wrapper {
+        .section_title {
+            @include mainTitleStyle;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .offer_panel_wrapper a img {
+        height: auto;
+    }
+}

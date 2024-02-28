@@ -1,0 +1,180 @@
+.product_card_content_wrapper {
+    position: relative;
+
+    .product_badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include flexCenterAlignment;
+        width: max-content;
+        text-align: center;
+        padding: 8px 15px;
+        font-size: 15px;
+        font-weight: $semi_bold_font;
+        color: var(--white_clr);
+        @include customBorderRadius(10px, 0, 10px, 0);
+
+        &.new {
+            background-color: var(--main_theme_clr);
+        }
+
+        &.sale {
+            background-color: var(--mid_green_clr);
+        }
+
+        &.out_of_stock {
+            background-color: var(--mid_red_clr);
+        }
+    }
+
+    .product_image {
+        position: relative;
+        display: block;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            @include borderRadius(15px);
+            object-position: top;
+
+            &.hover_image {
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+                @include transitioning(0.5s);
+            }
+
+        }
+
+        &:hover {
+            .hover_image {
+                opacity: 1;
+            }
+        }
+    }
+
+    .product_details_wrapper {
+        padding: 15px 6px;
+        @include verticalFlexStartAlignment;
+        row-gap: 10px;
+
+        .product_name {
+            margin-block: 0;
+            text-align: start;
+            font-size: 18px;
+            font-family: $bold_font;
+            color: var(--theme_text_clr);
+        }
+
+        .brand_name {
+            margin-block: 0;
+            text-align: start;
+            font-size: 16px;
+            font-family: $semi_bold_font;
+            color: var(--light_gray_clr);
+        }
+
+        .price_and_btns_wrapper {
+            width: 100%;
+            @include flexSpaceBetweenAlignment;
+
+            .product_price {
+                @include flexCenterAlignment;
+                column-gap: 10px;
+
+                .before_sale,
+                .after_sale,
+                .price_witout_sale {
+                    margin-block: 0;
+
+                    span {
+                        font-family: $bold_font;
+                    }
+                }
+
+                .before_sale {
+                    font-size: 14px;
+                    color: var(--light_gray_clr);
+                    text-decoration: line-through;
+                }
+
+                .after_sale,
+                .price_witout_sale {
+                    font-size: 16px;
+                    color: var(--theme_text_clr);
+                }
+            }
+
+            .card_buttons {
+                position: relative;
+                @include flexCenterAlignment;
+                column-gap: 20px;
+
+                .share_btn {
+
+                    svg,
+                    i {
+                        font-size: 26px;
+                        color: var(--theme_text_clr);
+                    }
+                }
+
+                .wishlist_btn {
+                    position: relative;
+                    width: 26px;
+                    height: 26px;
+
+                    &.active_wishlist_btn {
+                        i {
+                            opacity: 0;
+                        }
+
+                        svg {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+
+                    svg,
+                    i {
+                        font-size: 26px;
+                        color: var(--theme_text_clr);
+                        position: absolute;
+                        inset: 0;
+
+                        &.added_to_wishlist {
+                            color: var(--mid_red_clr);
+                        }
+
+                        @include transitioning(0.3s);
+                    }
+
+                    i {
+                        opacity: 1;
+                    }
+
+                    svg {
+                        opacity: 0;
+                        transform: scale(0);
+                    }
+                }
+
+                .social_share_btns {
+                    position: absolute;
+                    left: -30%;
+                    top: -150%;
+                    @include flexCenterAlignment;
+                    column-gap: 10px;
+
+                    .single_share_btn {
+                        button {
+                            img {
+                                width: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

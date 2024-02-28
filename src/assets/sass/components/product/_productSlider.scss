@@ -1,0 +1,164 @@
+.products_carousel_wrapper {
+    .owl-carousel {
+        .owl-nav {
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            translate: transformY(-50%);
+            left: 0;
+            width: 100%;
+            @include flexSpaceBetweenAlignment;
+            z-index: -1;
+
+            .owl-next {
+                margin-inline-end: -75px;
+                position: relative;
+                visibility: hidden;
+
+                &:after {
+                    content: "\f178";
+                    visibility: visible;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 300;
+                    font-size: 30px;
+                    display: block;
+                    color: var(--theme_text_clr);
+                }
+            }
+
+            .owl-prev {
+                margin-inline-start: -75px;
+                position: relative;
+                visibility: hidden;
+
+                &:after {
+                    content: "\f177";
+                    visibility: visible;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 300;
+                    font-size: 30px;
+                    display: block;
+                    color: var(--theme_text_clr);
+                }
+            }
+        }
+    }
+}
+
+// START:: MEDIA QUERY
+@media (max-width: 767.98px) {
+    .products_carousel_wrapper {
+        .owl-carousel {
+            .owl-nav {
+                display: none;
+            }
+        }
+
+        .product_card_content_wrapper {
+
+
+            .product_details_wrapper {
+                .price_and_btns_wrapper {
+
+                    .card_buttons {
+
+                        .share_btn {
+                            display: none;
+
+                            svg {}
+                        }
+                    }
+
+                    .product_price {
+                        h5 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .brand_name {
+                    font-size: 14px;
+                }
+
+                .product_name {
+                    font-size: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    max-width: 100%;
+                }
+            }
+
+            .product_image {
+                height: 230px;
+                overflow: hidden;
+                display: block;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+
+    .wishlist_content_wrapper {
+        .col-lg-3 {
+            width: 50%;
+        }
+
+        .product_card_content_wrapper {
+
+
+            .product_details_wrapper {
+                .price_and_btns_wrapper {
+
+                    .card_buttons {
+
+                        .share_btn {
+                            display: none;
+
+                            svg {}
+                        }
+                    }
+
+                    .product_price {
+                        h5 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .brand_name {
+                    font-size: 14px;
+                }
+
+                .product_name {
+                    font-size: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    max-width: 100%;
+                }
+            }
+
+            .product_image {
+                height: 230px;
+                overflow: hidden;
+                display: block;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+
+}
